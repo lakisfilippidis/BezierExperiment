@@ -17,6 +17,7 @@
 		23CC67812AC3468B00E4D3FF /* TestingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 23CC67802AC3468B00E4D3FF /* TestingTests.m */; };
 		23CC678B2AC3468B00E4D3FF /* TestingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 23CC678A2AC3468B00E4D3FF /* TestingUITests.m */; };
 		23CC678D2AC3468B00E4D3FF /* TestingUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 23CC678C2AC3468B00E4D3FF /* TestingUITestsLaunchTests.m */; };
+		23CC679B2AC4C5A700E4D3FF /* BezierExperiment.m in Sources */ = {isa = PBXBuildFile; fileRef = 23CC679A2AC4C5A700E4D3FF /* BezierExperiment.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		23CC67862AC3468B00E4D3FF /* TestingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23CC678A2AC3468B00E4D3FF /* TestingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestingUITests.m; sourceTree = "<group>"; };
 		23CC678C2AC3468B00E4D3FF /* TestingUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestingUITestsLaunchTests.m; sourceTree = "<group>"; };
+		23CC67992AC4C5A700E4D3FF /* BezierExperiment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BezierExperiment.h; sourceTree = "<group>"; };
+		23CC679A2AC4C5A700E4D3FF /* BezierExperiment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BezierExperiment.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				23CC67682AC3468A00E4D3FF /* SceneDelegate.m */,
 				23CC676A2AC3468A00E4D3FF /* ViewController.h */,
 				23CC676B2AC3468A00E4D3FF /* ViewController.m */,
+				23CC67992AC4C5A700E4D3FF /* BezierExperiment.h */,
+				23CC679A2AC4C5A700E4D3FF /* BezierExperiment.m */,
 				23CC676D2AC3468A00E4D3FF /* Main.storyboard */,
 				23CC67702AC3468B00E4D3FF /* Assets.xcassets */,
 				23CC67722AC3468B00E4D3FF /* LaunchScreen.storyboard */,
@@ -266,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23CC679B2AC4C5A700E4D3FF /* BezierExperiment.m in Sources */,
 				23CC676C2AC3468A00E4D3FF /* ViewController.m in Sources */,
 				23CC67662AC3468A00E4D3FF /* AppDelegate.m in Sources */,
 				23CC67772AC3468B00E4D3FF /* main.m in Sources */,
@@ -450,6 +456,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -477,6 +484,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
