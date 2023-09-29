@@ -157,8 +157,6 @@
     CGFloat x = MAX(pointRadius, MIN(view.bounds.size.width - pointRadius, location.x));
     CGFloat y = MAX(pointRadius, MIN(view.bounds.size.height - pointRadius, location.y));
     
-    NSLog(@"X: %f   Y: %f", x, y);
-    
     if (draggedPoint.x > 0 && draggedPoint.y > 0) {
         [self moveDraggedPoint:CGPointMake(x, y)];
         [self createBezier:view];
