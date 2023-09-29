@@ -59,7 +59,6 @@
     startControlPoint = CGPointMake(1.f, 1.f);
     finishControlPoint = CGPointMake(2.f, 2.f);
     testPoint = [bezier getTPoint:coefficient startPoint:startPoint finishPoint:finishPoint startControlPoint:startControlPoint finishControlPoint:finishControlPoint];
-    
     XCTAssertEqual(testPoint.x, 0.75, @"point X");
     XCTAssertEqual(testPoint.y, 0.75, @"point Y");
     
@@ -72,6 +71,17 @@
     
     XCTAssertEqual(testPoint.x, 1.0, @"point X");
     XCTAssertEqual(testPoint.y, 1.0, @"point Y");
+    
+    // Negative test case
+    coefficient = 0.5f;
+    startPoint = CGPointMake(0.f, 0.f);
+    finishPoint = CGPointMake(2.f, 2.f);
+    startControlPoint = CGPointMake(2.f, 0.f);
+    finishControlPoint = CGPointMake(0.f, 2.f);
+    testPoint = [bezier getTPoint:coefficient startPoint:startPoint finishPoint:finishPoint startControlPoint:startControlPoint finishControlPoint:finishControlPoint];
+    
+    XCTAssertEqual(testPoint.x, 1.1, @"point X");
+    XCTAssertEqual(testPoint.y, 1.1, @"point Y");
 }
 
 - (void)testPerformanceExample {
