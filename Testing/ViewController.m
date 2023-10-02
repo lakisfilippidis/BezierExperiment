@@ -29,9 +29,10 @@
     [super viewDidLoad];
     
     drawingView.layer.cornerRadius = 15.f;
-    
     bezier = [BezierExperiment new];
-    
+}
+
+- (void)viewDidAppear:(BOOL)animated {
     [self generate:nil];
 }
 
@@ -46,8 +47,6 @@
 
 - (void)setRandomCoefficiente {
     CGFloat coefficient = (CGFloat)arc4random() / UINT32_MAX;
-    
-    coefficient = 0.5;
     coefSlider.value = coefficient;
     [bezier coefficientChanged:drawingView coefficient:coefSlider.value];
 }
